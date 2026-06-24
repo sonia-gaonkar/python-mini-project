@@ -1,7 +1,6 @@
-from users.profile import update_profile
+from user_profile.profile import update_profile
 
 def deactivate_account(profile):
-    # Calls update_profile with a SINGLE argument
-    result = update_profile(profile)
+    result = update_profile(profile)   # one arg — will break after the PR
     result["active"] = False
     return result
