@@ -8,7 +8,6 @@ _profiles = {}
 
 PHONE_RE = re.compile(r"^\+?[0-9]{7,15}$")
 
-
 @router.put("/profile")
 def update_profile(profile: dict):
     """
