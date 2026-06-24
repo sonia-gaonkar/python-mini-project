@@ -1,5 +1,4 @@
-from users.profile import update_profile
+from user_profile.profile import update_profile
 
-def handle_profile_update(request_body):
-    # Also calls update_profile with a SINGLE argument
-    return update_profile(request_body)
+def handle_profile_update(body):
+    return update_profile(body)        # one arg — will break after the PR
